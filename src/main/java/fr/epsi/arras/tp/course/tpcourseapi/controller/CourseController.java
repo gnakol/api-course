@@ -1,5 +1,6 @@
 package fr.epsi.arras.tp.course.tpcourseapi.controller;
 
+import fr.epsi.arras.tp.course.tpcourseapi.entity.Chapter;
 import fr.epsi.arras.tp.course.tpcourseapi.entity.Course;
 import fr.epsi.arras.tp.course.tpcourseapi.repository.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +36,8 @@ public class CourseController {
     {
         return courseRepository.findById(id).orElseThrow();
     }
+
+
 
     /*@RequestMapping(
             method = RequestMethod.PUT,

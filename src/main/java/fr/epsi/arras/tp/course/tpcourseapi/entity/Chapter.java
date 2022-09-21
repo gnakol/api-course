@@ -21,7 +21,7 @@ public class Chapter {
     @JsonIgnoreProperties(value = {"chapters"})
     private Course course;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
